@@ -42,6 +42,8 @@ album1.save()
 album2.save()
 album3.save()
 album4.save()
+album4.title = "Hello World"
+album4.update
 
 binding.pry
 
