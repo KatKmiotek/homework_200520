@@ -31,4 +31,11 @@ def Album.delete_all()
   SqlRunner.run(sql)
 end
 
+def find_artist()
+  sql = "SELECT * FROM artists WHERE id = $1"
+  values = [@artist_id]
+  result = SqlRunner.run(sql, values)
+  return Artist.new(result[0])
+end
+
 end
