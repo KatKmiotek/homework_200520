@@ -49,5 +49,7 @@ Album.all()
 
 Artist.all()
 
+artist1.find_all_albums()
+
 binding.pry
 nil
